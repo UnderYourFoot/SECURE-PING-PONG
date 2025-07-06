@@ -11,14 +11,21 @@ Ideal para aprender:
 ## Cómo funciona
 
 - **Cliente** envía un mensaje “ping” cifrado al servidor.
-- **Servidor** descifra el mensaje y, si la clave es correcta, responde con un “pong” cifrado.
+- **Servidor** descifra el mensaje y, si la clave es correcta, responde con un “pong” (XD) cifrado.
 - Dispositivos desconocidos (sin la clave) no reciben respuesta útil.
 
 ## Requisitos
 
-- Python 3.x
+- Python 3
 - cryptography
 
 Instalación:
 ```bash
 pip install cryptography
+
+pip install server.py
+
+python client.py --ip <IP_DEL_SERVIDOR> --key MiClaveSecreta
+
+
+
